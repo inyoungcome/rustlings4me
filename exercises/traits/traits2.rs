@@ -15,6 +15,14 @@
 
 trait AppendBar {
     fn append_bar(self) -> Self;
+} 
+
+impl AppendBar for Vec<String> {
+    fn append_bar(self) -> Self {
+        let mut s = self;
+        s.push("Bar".to_string());
+        s
+    }
 }
 
 //TODO: Add your code here

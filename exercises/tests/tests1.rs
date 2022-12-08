@@ -13,6 +13,9 @@
 mod tests {
     #[test]
     fn you_can_assert() {
-        assert!();
+        // assert!(true);
+        // assert!(false);
+        // assert_eq!(1, 1);
+        assert_ne!(1, 2);
     }
 }
